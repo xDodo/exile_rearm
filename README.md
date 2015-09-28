@@ -1,6 +1,6 @@
-a3 epoch HALV_takegive_crypto by Halv
+a3 epoch HALV_takegive_crypto by Halv * Contact : halvhjearne@gmail.com
 
-a3 exile takegive_poptab by Dodo
+a3 exile takegive_poptab by Dodo * Contact : dodo@bow-clan.eu
 
 Copyright (C) 2015 Halvhjearne
 
@@ -10,4 +10,3 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 
 You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/.
 
-Contact : halvhjearne@gmail.com - dodo@bow-clan.eu
