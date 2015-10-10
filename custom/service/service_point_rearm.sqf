@@ -1,6 +1,6 @@
 // Vehicle Service Point (Rearm) by Axe Cop
-// reworked for a3 epoch by Halv
-// reworked for a3 exile by Dodo
+//reworked for a3 epoch by Halv
+//reworked for a3 exile by Dodo
  
 private ["_vehicle","_args","_servicePoint","_costs","_magazineCount","_weapon","_type","_name","_weaponType","_weaponName","_turret","_magazines","_ammo","_wallet","_veh"];
  
