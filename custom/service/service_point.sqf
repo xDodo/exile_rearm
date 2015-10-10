@@ -5,7 +5,7 @@
 private ["_folder","_servicePointClasses","_maxDistance","_costsFree","_message","_messageShown","_repair_enable","_repair_costs","_repair_repairTime","_rearm_enable","_rearm_costs","_lastVehicle","_lastRole","_fnc_removeActions","_fnc_getCosts","_fnc_actionTitle","_fnc_getWeapons"];
  
 //====================== general settings
-_folder = "custom\service\"; // folder where the service point scripts are saved, relative to the mission file
+_folder = "custom\service_point\"; // folder where the service point scripts are saved, relative to the mission file
 _servicePointClasses = ["O_Truck_03_covered_F","Land_CarService_F","Land_fs_roof_F","CargoNet_01_barrels_F"]; // service point classes (can be house, vehicle and unit classes)
 _maxDistance = 15; // maximum distance from a service point for the options to be shown
 _costsFree = "free"; // text for no costs
@@ -13,11 +13,11 @@ _message = "-- Vehicle Service Point --"; // message to be shown when in range o
 _actionColour = "#0096ff"; //the colour of the scroll action Blue: "#0096ff"
  
 //====================== repair settings
-_repair_enable = false; // enable or disable the repair option
+_repair_enable = true; // enable or disable the repair option
 _repair_repairTime = 5; // time needed to repair each damaged part (in seconds)
  
 _repair_costs = [  //Need Money
-		["Air",250],
+		["Air",200],
         ["AllVehicles",150] 
 ];
  
