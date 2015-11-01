@@ -2,7 +2,7 @@
 //reworked for a3 epoch by Halv
 //reworked for a3 exile by Dodo
  
-private ["_vehicle","_args","_servicePoint","_costs","_magazineCount","_weapon","_type","_name","_weaponType","_weaponName","_turret","_magazines","_ammo","_wallet","_veh"];
+private ["_vehicle","_args","_servicePoint","_costs","_magazineCount","_weapon","_type","_name","_weaponType","_weaponName","_turret","_magazines","_ammo","_exilew","_veh"];
  
 _vehicle = _this select 0;
 _args = _this select 3;
@@ -17,13 +17,13 @@ _ammoName = _weapon select 2;
 _ammoMAX = _weapon select 3;
 _ammoMIN = _weapon select 4;
 _turret = _weapon select 5;
-_wallet = ExileClientPlayerMoney;
+_exilew = ExileClientPlayerMoney;
 _veh = vehicle player; 
 
 if (!local _vehicle) exitWith {cutText [format["%2 is not local to %1 - Re-Arm Denied!",name player, _name], "PLAIN DOWN"]; diag_log format["Error: called service_point_rearm.sqf with non-local vehicle: %1", _vehicle] };
 if(count (crew _vehicle) > 1) exitWith {cutText ["All Passengers Must Exit Vehicle - Re-Arm Denied!", "PLAIN DOWN"];};
 if(!(_veh isEqualTo player) && {(driver _veh) isEqualTo player}) exitWith {cutText ["You have now to enter as Gunner - Re-Arm Denied!", "PLAIN DOWN"];};
-if (_wallet <_costs) exitWith {cutText [format["You need %1 Pop tab to re-arm %2", _costs,_name], "PLAIN DOWN"];};
+if (_exilew <_costs) exitWith {cutText [format["You need %1 Pop tab to re-arm %2", _costs,_name], "PLAIN DOWN"];};
 _currentmags = magazines _vehicle;
 _magscount = count _currentmags;
 _ammocount = {_ammoClass == _x}count _currentmags;
