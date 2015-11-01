@@ -14,7 +14,7 @@ _actionColour = "#0096ff"; //the colour of the scroll action Blue: "#0096ff"
  
 //====================== repair settings
 _repair_enable = true; // enable or disable the repair option
-_repair_repairTime = 5; // time needed to repair each damaged part (in seconds)
+_repair_repairTime = 3; // time needed to repair each damaged part (in seconds)
  
 _repair_costs = [  //Need Money
 		["Air",200],
@@ -58,15 +58,13 @@ _NoGoAmmoCName = [
 		//GH 2000 RND
 		"2000Rnd_65x39_Belt_Tracer_Green_Splash","2000Rnd_65x39_Belt_Tracer_Yellow_Splash",
 		//PAWNEE 5000 RND
-		"5000Rnd_762x51_Belt"
+		"5000Rnd_762x51_Belt","24Rnd_missiles"
 ];
  
 //cost per magazine for individual vehicles
 _rearm_costs = [ 
-        ["B_Heli_Transport_01_F",1000],
-		["B_Heli_Transport_03_black_F",1250],
-		["B_Heli_Light_01_armed_F",2500],
-        ["AllVehicles",250] 
+        ["Air",0],
+        ["AllVehicles",0] 
 ];
  
 //debug weapons to see classnames in chat/rpt
