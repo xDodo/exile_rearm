@@ -1,0 +1,2 @@
+publicvariable.txt
+7 "" !="takegive_poptab"
