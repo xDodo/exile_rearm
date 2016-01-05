@@ -1,0 +1,6 @@
+With "_vehicleObject setVehicleAmmo 0;" and "_vehicleObject setAmmoCargo 0;" in to the files
+ExileServer_object_vehicle_createNonPersistentVehicle.sqf, 
+ExileServer_object_vehicle_createPersistentVehicle.sqf,
+ExileServer_object_vehicle_database_load.sqf and 
+ExileServer_system_trading_network_purchaseVehicleRequest.sqf 
+can you remove ammunition from vehicles and ammo trucks.
